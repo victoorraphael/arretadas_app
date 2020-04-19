@@ -5,11 +5,11 @@ import 'package:hello_world/screens/info.dart';
 
 void main() {
   runApp(MaterialApp(
-    title: 'Named Routes Demo',
+    title: 'Routes',
     initialRoute: '/',
     routes: {
-      '/': (context) => Home(),
-      '/login': (context) => Login(),
+      '/': (context) => Login(),
+      '/home': (context) => Home(),
       '/info' : (context) => Info(),
     },
   ));
