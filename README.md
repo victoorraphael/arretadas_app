@@ -1,4 +1,4 @@
-# hello_world
+# Arretadas App
 
 A new Flutter project.
 
