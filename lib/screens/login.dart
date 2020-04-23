@@ -71,20 +71,25 @@ class Login extends StatelessWidget {
               ),
             ),
             SizedBox(height: 10),
-            Container(
-              height: 45,
-              margin: EdgeInsets.symmetric(horizontal: 80),
-              decoration: BoxDecoration(
-                color: Color.fromRGBO(255, 52, 154, 1),
-                borderRadius: BorderRadius.circular(30.0),
-              ),
-              child: Center(
-                child: Text(
-                  'Login',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 14,
-                    fontWeight: FontWeight.bold,
+            FlatButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/home');
+              },
+              child: Container(
+                height: 45,
+                margin: EdgeInsets.symmetric(horizontal: 80),
+                decoration: BoxDecoration(
+                  color: Color.fromRGBO(255, 52, 154, 1),
+                  borderRadius: BorderRadius.circular(30.0),
+                ),
+                child: Center(
+                  child: Text(
+                    'Login',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 14,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
               ),
