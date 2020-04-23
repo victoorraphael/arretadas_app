@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:hello_world/screens/home.dart';
-import 'package:hello_world/screens/login.dart';
-import 'package:hello_world/screens/info.dart';
+import 'package:arretadas/screens/home.dart';
+import 'package:arretadas/screens/login.dart';
+import 'package:arretadas/screens/info.dart';
 
 void main() {
   runApp(MaterialApp(
