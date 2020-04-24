@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:arretadas/screens/home.dart';
+import 'package:arretadas/screens/menu.dart';
 import 'package:arretadas/screens/login.dart';
+import 'package:arretadas/screens/home.dart';
 import 'package:arretadas/screens/info.dart';
 
 void main() {
@@ -8,9 +9,10 @@ void main() {
     title: 'Routes',
     initialRoute: '/',
     routes: {
-      '/': (context) => Login(),
-      '/home': (context) => Home(),
+      '/': (context) => Home(),
+      '/menu': (context) => Menu(),
       '/info' : (context) => Info(),
+      '/login' : (context) => Login(),
     },
   ));
 }

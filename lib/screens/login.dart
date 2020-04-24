@@ -7,6 +7,7 @@ class Login extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         resizeToAvoidBottomInset: false,
+        backgroundColor: Color.fromRGBO(248,92,104,1),
         body: Column(
           children: <Widget>[
             Container(
@@ -79,7 +80,7 @@ class Login extends StatelessWidget {
                 height: 45,
                 margin: EdgeInsets.symmetric(horizontal: 80),
                 decoration: BoxDecoration(
-                  color: Color.fromRGBO(255, 52, 154, 1),
+                  color: Color.fromRGBO(193, 66, 66, 1),
                   borderRadius: BorderRadius.circular(30.0),
                 ),
                 child: Center(
