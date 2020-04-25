@@ -115,23 +115,82 @@ class Menu extends StatelessWidget {
                     ),
                   ),
                   SizedBox(height: 15,),
-                  Column(
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: <Widget>[
-                      Row(
-                        children: <Widget>[
-                          Container(
-                            height: 120,
-                            width: 120,
-                            decoration: BoxDecoration(
-                              color: Colors.purpleAccent,
-                              borderRadius: BorderRadius.circular(10),
+                      Container(
+                        // Informacoes
+                        height: 120,
+                        width: 120,
+                        decoration: BoxDecoration(
+                          color: Colors.purple[500],
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: FlatButton(
+                          onPressed: () {},
+                          child: Icon(
+                            Icons.import_contacts,
+                            size: 70,
+                            color: Colors.white,
                             ),
-                            child: FlatButton(
-                              onPressed: () {},
-                              child: Image.asset('assets/logo-white.png'),
+                        ),
+                      ),
+                      Container(
+                        // Contatos
+                        height: 120,
+                        width: 120,
+                        decoration: BoxDecoration(
+                          color: Colors.purple[500],
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: FlatButton(
+                          onPressed: () {},
+                          child: Icon(
+                            Icons.local_phone,
+                            size: 70,
+                            color: Colors.white,
                             ),
-                          ),
-                        ],
+                        ),
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 30,),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: <Widget>[
+                      Container(
+                        // Denuncia
+                        height: 120,
+                        width: 120,
+                        decoration: BoxDecoration(
+                          color: Colors.purple[500],
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: FlatButton(
+                          onPressed: () {},
+                          child: Icon(
+                            Icons.warning,
+                            size: 70,
+                            color: Colors.white,
+                            ),
+                        ),
+                      ),
+                      Container(
+                        // Agenda
+                        height: 120,
+                        width: 120,
+                        decoration: BoxDecoration(
+                          color: Colors.purple[500],
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: FlatButton(
+                          onPressed: () {},
+                          child: Icon(
+                            Icons.group,
+                            size: 70,
+                            color: Colors.white,
+                            ),
+                        ),
                       ),
                     ],
                   ),
