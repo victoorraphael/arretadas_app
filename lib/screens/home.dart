@@ -44,7 +44,7 @@ class Home extends StatelessWidget{
                     onPressed: () {},
                     child: Center(
                       child: Text(
-                      'SIGN UP',
+                      'CADASTRAR',
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 15.0,
@@ -63,10 +63,12 @@ class Home extends StatelessWidget{
                     color: Colors.white,
                   ),
                   child: FlatButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/menu');
+                    },
                     child: Center(
                       child: Text(
-                      'LOGIN',
+                      'ENTRAR',
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 15.0,

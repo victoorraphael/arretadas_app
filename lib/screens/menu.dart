@@ -6,156 +6,131 @@ class Menu extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Color.fromRGBO(248,92,104,1),
-        appBar: AppBar(
-        elevation: 0,
-        backgroundColor: Colors.transparent,
-        title: Text('Home Screen'),
-        ),
-        body: Column(
-          children: <Widget>[
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: <Widget>[
-                FlatButton(
-                  onPressed: () {
-                    Navigator.pushNamed(context, '/info');
-                  },
-                  child: Container(
-                    width: 140.0,
-                    height: 150.0,
-                    margin: EdgeInsets.only(top:5.0),
-                    decoration: BoxDecoration(
-                      image: DecorationImage(
-                        fit: BoxFit.contain,
-                        image: AssetImage('assets/arretadas-logo.png'),
+        body: SafeArea(
+          child: Stack(
+            children: <Widget>[
+              Image.asset(
+                "assets/Background.jpg",
+                height: MediaQuery.of(context).size.height,
+                fit: BoxFit.cover,
+              ),
+              Column(
+                children: <Widget>[
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: <Widget>[
+                      Column(
+                        mainAxisSize: MainAxisSize.min,
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: <Widget>[
+                          Container(
+                            padding: EdgeInsets.only(top: 10),
+                            child: Text(
+                              'Olá, Boa tarde !',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 20.0,
+                                fontWeight: FontWeight.bold,
+                                fontFamily: 'Exo',
+                              ),
+                            ),
+                          ),
+                          Container(
+                            padding: EdgeInsets.only(top: 5),
+                            child: Text(
+                              'Maria da Penha',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 20.0,
+                                fontWeight: FontWeight.bold,
+                                fontFamily: 'Exo',
+                              ),
+                              ),
+                          ),
+                        ],
                       ),
+                      Container(
+                        margin: EdgeInsets.only(top: 10),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(50)
+                        ),
+                        child: Image.asset('assets/icon-person.png')
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 20,),
+                  Container(
+                    margin: EdgeInsets.all(10),
+                    height: 200.0,
+                    width: MediaQuery.of(context).size.width,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(15),
+                      color: Color.fromRGBO(188,32,224,1),
                     ),
-                    child: Container(
-                      child: Text('Informacoes'),
-                      alignment: Alignment.bottomCenter,
-                      margin: EdgeInsets.only(top:8.0),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: <Widget>[
+                        ListTile(
+                          title: Container(
+                            margin: EdgeInsets.symmetric(vertical: 6),
+                            child: Text(
+                              'Novidades',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 20,
+                                fontFamily: 'Exo',
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                          subtitle: Container(
+                            child: Text(
+                              'BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontFamily: 'Exo',
+                              ),
+                            ),
+                          ),
+                        ),
+                        ButtonBar(
+                          children: <Widget>[
+                            FlatButton(
+                              onPressed: () {},
+                              child: Text(
+                                'TUTORIAL >',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 22.0,
+                                  fontFamily: 'Exo',
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
                     ),
                   ),
-                ),
-                FlatButton(
-                  onPressed: () {
-                    Navigator.pushNamed(context, '/info');
-                  },
-                  child: Container(
-                    width: 140.0,
-                    height: 150.0,
-                    margin: EdgeInsets.only(top:5.0),
-                    decoration: BoxDecoration(
-                      image: DecorationImage(
-                        fit: BoxFit.contain,
-                        image: AssetImage('assets/arretadas-logo.png'),
+                  SizedBox(height: 15,),
+                  Row(
+                    children: <Widget>[
+                      Container(
+                        height: 100,
+                        width: 100,
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(10),
+                        ),
                       ),
-                    ),
-                    child: Container(
-                      child: Text('Informacoes'),
-                      alignment: Alignment.bottomCenter,
-                      margin: EdgeInsets.only(top:8.0),
-                    ),
+                    ],
                   ),
-                ),
-              ],
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: <Widget>[
-                FlatButton(
-                  onPressed: () {
-                    Navigator.pushNamed(context, '/info');
-                  },
-                  child: Container(
-                    width: 140.0,
-                    height: 150.0,
-                    margin: EdgeInsets.only(top:5.0),
-                    decoration: BoxDecoration(
-                      image: DecorationImage(
-                        fit: BoxFit.contain,
-                        image: AssetImage('assets/arretadas-logo.png'),
-                      ),
-                    ),
-                    child: Container(
-                      child: Text('Informacoes'),
-                      alignment: Alignment.bottomCenter,
-                      margin: EdgeInsets.only(top:8.0),
-                    ),
-                  ),
-                ),
-                FlatButton(
-                  onPressed: () {
-                    Navigator.pushNamed(context, '/info');
-                  },
-                  child: Container(
-                    width: 140.0,
-                    height: 150.0,
-                    margin: EdgeInsets.only(top:5.0),
-                    decoration: BoxDecoration(
-                      image: DecorationImage(
-                        fit: BoxFit.contain,
-                        image: AssetImage('assets/arretadas-logo.png'),
-                      ),
-                    ),
-                    child: Container(
-                      child: Text('Informacoes'),
-                      alignment: Alignment.bottomCenter,
-                      margin: EdgeInsets.only(top:8.0),
-                    ),
-                  ),
-                ),
-              ],
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: <Widget>[
-                FlatButton(
-                  onPressed: () {
-                    Navigator.pushNamed(context, '/info');
-                  },
-                  child: Container(
-                    width: 140.0,
-                    height: 150.0,
-                    margin: EdgeInsets.only(top:5.0),
-                    decoration: BoxDecoration(
-                      image: DecorationImage(
-                        fit: BoxFit.contain,
-                        image: AssetImage('assets/arretadas-logo.png'),
-                      ),
-                    ),
-                    child: Container(
-                      child: Text('Informacoes'),
-                      alignment: Alignment.bottomCenter,
-                      margin: EdgeInsets.only(top:8.0),
-                    ),
-                  ),
-                ),
-                FlatButton(
-                  onPressed: () {
-                    Navigator.pushNamed(context, '/info');
-                  },
-                  child: Container(
-                    width: 140.0,
-                    height: 150.0,
-                    margin: EdgeInsets.only(top:5.0),
-                    decoration: BoxDecoration(
-                      image: DecorationImage(
-                        fit: BoxFit.contain,
-                        image: AssetImage('assets/arretadas-logo.png'),
-                      ),
-                    ),
-                    child: Container(
-                      child: Text('Informacoes'),
-                      alignment: Alignment.bottomCenter,
-                      margin: EdgeInsets.only(top:8.0),
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ],
+                ],
+              ),
+            ],
+          ),
         ),
         bottomNavigationBar: BottomNavigationBar(
           backgroundColor: Color.fromRGBO(248,92,104,1),
