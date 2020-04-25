@@ -115,15 +115,23 @@ class Menu extends StatelessWidget {
                     ),
                   ),
                   SizedBox(height: 15,),
-                  Row(
+                  Column(
                     children: <Widget>[
-                      Container(
-                        height: 100,
-                        width: 100,
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(10),
-                        ),
+                      Row(
+                        children: <Widget>[
+                          Container(
+                            height: 120,
+                            width: 120,
+                            decoration: BoxDecoration(
+                              color: Colors.purpleAccent,
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                            child: FlatButton(
+                              onPressed: () {},
+                              child: Image.asset('assets/logo-white.png'),
+                            ),
+                          ),
+                        ],
                       ),
                     ],
                   ),
