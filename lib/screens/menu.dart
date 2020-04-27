@@ -39,7 +39,7 @@ class Menu extends StatelessWidget {
                           Container(
                             padding: EdgeInsets.only(top: 5),
                             child: Text(
-                              'Maria da Penha',
+                              'Beltrana da Silva',
                               style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 20.0,
@@ -59,6 +59,33 @@ class Menu extends StatelessWidget {
                         child: Image.asset('assets/icon-person.png')
                       ),
                     ],
+                  ),
+                  Container(
+                    width: MediaQuery.of(context).size.width,
+                    height: 150.0,
+                    margin: EdgeInsets.only(left: 6, right: 6, top: 15),
+                    decoration: BoxDecoration(
+                      color: Colors.yellowAccent,
+                      borderRadius: BorderRadius.circular(15),
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: <Widget>[
+                        Icon(
+                          Icons.warning,
+                          size: 70,
+                        ),
+                        Text(
+                          'DENUNCIAR',
+                          style: TextStyle(
+                            fontFamily: 'Exo',
+                            fontWeight: FontWeight.bold,
+                            fontSize: 40,
+                            letterSpacing: 2,
+                          ),
+                        )
+                      ],
+                    ),
                   ),
                   SizedBox(height: 20,),
                   Container(
@@ -120,8 +147,8 @@ class Menu extends StatelessWidget {
                     children: <Widget>[
                       Container(
                         // Informacoes
-                        height: 120,
-                        width: 120,
+                        height: 100,
+                        width: 100,
                         decoration: BoxDecoration(
                           color: Colors.purple[500],
                           borderRadius: BorderRadius.circular(10),
@@ -137,8 +164,8 @@ class Menu extends StatelessWidget {
                       ),
                       Container(
                         // Contatos
-                        height: 120,
-                        width: 120,
+                        height: 100,
+                        width: 100,
                         decoration: BoxDecoration(
                           color: Colors.purple[500],
                           borderRadius: BorderRadius.circular(10),
@@ -152,33 +179,10 @@ class Menu extends StatelessWidget {
                             ),
                         ),
                       ),
-                    ],
-                  ),
-                  SizedBox(height: 30,),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: <Widget>[
-                      Container(
-                        // Denuncia
-                        height: 120,
-                        width: 120,
-                        decoration: BoxDecoration(
-                          color: Colors.purple[500],
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        child: FlatButton(
-                          onPressed: () {},
-                          child: Icon(
-                            Icons.warning,
-                            size: 70,
-                            color: Colors.white,
-                            ),
-                        ),
-                      ),
                       Container(
                         // Agenda
-                        height: 120,
-                        width: 120,
+                        height: 100,
+                        width: 100,
                         decoration: BoxDecoration(
                           color: Colors.purple[500],
                           borderRadius: BorderRadius.circular(10),
